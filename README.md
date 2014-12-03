@@ -23,7 +23,8 @@ Classes
 Dependencies
 -------------
 - jfryman/puppet-nginx
-
+- puppetlabs/apt
+- puppetlabs/stdlib
 
 
 Puppet code
