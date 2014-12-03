@@ -9,13 +9,12 @@
 #
 class role_simplelb (
   $sitename               = "simplelb.site.com",
-  $proxy                  = "http://simplelb.site.com",
   $members                = ['192.168.1.10','192.168.1.11'],
 ){
 
   class {'nginx':}
 
-  nginx::resource::vhost { $sitename: proxy => $proxy, }
+  nginx::resource::vhost { $sitename: proxy => "http://${sitename}", }
   nginx::resource::upstream { $sitename: members => $members, }
 
 }

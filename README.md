@@ -10,7 +10,6 @@ Sensible defaults in init.pp.
 
 ```
 - sitename                    sitename
-- proxy                       Proxy address
 - members                     Members array
 ```
 
